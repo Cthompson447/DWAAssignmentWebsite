@@ -110,6 +110,15 @@
 
 }
 
+@media only screen and (max-width: 991px) and (min-width: 601px) {
+    .row .col.m6 {
+        width: 50%;
+        margin-left: 25% !important;
+        left: auto;
+        right: auto;
+    }
+}
+
 .footer{
     background-color: var(--gt-red) !important;
 }
@@ -123,3 +132,49 @@ p {
     font-family: var(--gt-font);
 }
 
+.parallax-container{
+    z-index: 0 !important;
+}
+
+#carHireDetailsCard{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    z-index: 100 !important;
+}
+
+#carHireSubmitButton{
+    background-color: var(--gt-red);
+}
+
+.car-hire-details-date-time-picker{
+    width: 20% !important;
+    padding-left: 2%;
+}
+
+.time-label{
+    width: 12% !important;
+    padding-left: 2%;
+}
+/* customising CSS colors for date and time pickers, I'm using important to override the materialize
+default css color*/
+
+.datepicker-date-display, .timepicker-digital-display{
+    background-color: var(--gt-red) !important;
+}
+
+.btn-flat{
+    color: var(--gt-red) !important;
+}
+
+.datepicker-table td.is-selected{
+    background-color: var(--gt-red) !important;
+    color: white;
+}
+
+.timepicker-canvas-bg, .timepicker-canvas-bearing{
+    fill: var(--gt-red) !important;
+}
+
+.timepicker-canvas line{
+    stroke: var(--gt-red) !important;
+}

@@ -33,11 +33,54 @@
 <body>
 
 <div class="parallax-container">
-    <div class="parallax"><img src="media/parallaxBanner1.jpg" alt="Banner image of a road in sunset"></div>
+    <div class="parallax"><img src="media/parallaxBanner1.jpg" alt="Banner image of a road in sunset">
+        <div id="carHireDetailsCard" class="row">
+            <div class="col offset-l3 m6 ">
+                <div class="card">
+                    <form>
+                        <div class="card-content ">
+                            <span class="card-title bold">GT Car Hire NI</span>
+                            <p>Please select a pick-up and drop-off time suitable for your needs.<br/><br/></p>
+                            <div class="row">
+                                <label for="dateFrom" class="col-2">Date From: </label>
+                                <input type="text" id="dateFrom" class="datepicker car-hire-details-date-time-picker">
+                                <label for="timeFrom" class="time-label">Time From: </label>
+                                <input type="text" id="timeFrom" class="timepicker car-hire-details-date-time-picker">
+                            </div>
+                            <div class="row">
+                                <label for="dateTo" class="col-2">Date To: </label>
+                                <input type="text" id="dateTo" class="datepicker car-hire-details-date-time-picker">
+                                <label for="timeTo" class="time-label">Time To: </label>
+                                <input type="text" id="timeTo" class="timepicker car-hire-details-date-time-picker">
+                            </div>
+                            <div class="row">
+                                <span class="col-2">Driver's Age:</span>
+                                <label class="col-4">
+                                    <input id="under25" type="radio" name="ageGroup"/>
+                                    <span> Under 25</span>
+                                </label>
+                                <label class="col-5">
+                                    <input id="over25" type="radio" name="ageGroup"/>
+                                    <span> Over 25</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="card-action right-align">
+                            <button id="carHireSubmitButton" class="btn waves-effect waves-light" type="button"
+                                    name="action" onclick="submitCard()">Submit
+                                <i class="material-icons right">send</i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+
 <div class="section white">
     <div class="row container">
-    <br>
+        <br>
         <br><br><br><br><br><br><br><br><br><br><br>
 
 
@@ -52,6 +95,12 @@
         <div class="row">
             <div class="col l6 s12">
                 <h5 class="white-text">GT Car Hire</h5>
+                <p>Opening Hours</p>
+                <p>Monday - 09:00 - 17:00</p>
+                <p>Tuesday - 09:00 - 17:00</p>
+                <p>Wednesday - 09:00 - 17:00</p>
+                <p>Thursday - 09:00 - 17:00</p>
+                <p>Friday - 09:00 - 17:00</p>
             </div>
             <div class="col l4 offset-l2 s12">
                 <h5 class="white-text">Helpful Links</h5>
@@ -62,14 +111,15 @@
         </div>
     </div>
     <div class="footer-copyright">
-    <div class="container">
-        ©2020 GT Car Hire
-    </div>
+        <div class="container">
+            ©2020 GT Car Hire
+        </div>
     </div>
 </footer>
 
 
 <script type="text/javascript" src="js/materialize.min.js"></script>
 <script type="text/javascript" src="js/materializeElementFunctions.js"></script>
+<script type="text/javascript" src="index.js"></script>
 </body>
 </html>
