@@ -2,7 +2,8 @@ function submitCard() {
     validateAge();
     validateDateTimeFilledIn();
     validateDateRange();
-    validateTimeRange()
+    validateTimeRange();
+    validateSameDay();
 }
 
 
@@ -68,6 +69,16 @@ function validateTimeRange() {
     } else if (timeTo.value < '09:00' || timeTo.value > '17:00') {
         timeTo.focus();
         alert('Please enter a time to value  between 9am and 5pm.');
+        return false;
+    } else {
+        return true;
+    }
+}
+
+function validateSameDay() {
+    if((document.getElementById('dateFrom').value === document.getElementById('dateTo').value)
+    && (document.getElementById('timeTo').value < document.getElementById('timeFrom').value)){
+        alert('If hiring on same day, time to cannot be before time from');
         return false;
     } else {
         return true;
