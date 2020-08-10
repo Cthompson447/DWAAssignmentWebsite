@@ -1,3 +1,12 @@
 {
-
+  "cars": [
+    {
+      "id": 1,
+      "make": "Toyota",
+      "model": "GT86",
+      "isAvailableForUnder25Hire": false,
+      "dailyRate": 100,
+      "images": ["media/cars/gt86/gt861.jpg", "media/cars/gt86/gt862.jpg"]
+    }
+  ]
 }

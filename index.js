@@ -3,6 +3,7 @@ function submitCard() {
      && validateTimeRange() && validateSameDay()){
         setDifferenceInDays();
         setAgeGroup();
+        window.location.href = ("cars.html");
     }
 }
 
