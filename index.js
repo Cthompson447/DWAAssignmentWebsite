@@ -1,11 +1,10 @@
 function submitCard() {
-    validateAge();
-    validateDateTimeFilledIn();
-    validateDateRange();
-    validateTimeRange();
-    validateSameDay();
+    if(validateAge() && validateDateTimeFilledIn() && validateDateRange()
+     && validateTimeRange() && validateSameDay()){
+        setDifferenceInDays();
+        setAgeGroup();
+    }
 }
-
 
 //Validation function to ensure an age group has been selected
 function validateAge() {
@@ -58,6 +57,7 @@ function validateDateTimeFilledIn() {
     }
 }
 
+//Validation to make sure selected time is within opening hours
 function validateTimeRange() {
     var timeFrom = document.getElementById('timeFrom');
     var timeTo = document.getElementById('timeTo');
@@ -75,6 +75,7 @@ function validateTimeRange() {
     }
 }
 
+//If same day is chosen for rental, ensure time To isn't before time from
 function validateSameDay() {
     if((document.getElementById('dateFrom').value === document.getElementById('dateTo').value)
     && (document.getElementById('timeTo').value < document.getElementById('timeFrom').value)){
@@ -83,6 +84,32 @@ function validateSameDay() {
     } else {
         return true;
     }
+}
+
+/*Further on in user journey, total days will be used to calculate a total rental price. We'll work that out on
+submission of date card and save that off for later use*/
+function setDifferenceInDays() {
+    const dateFrom = new Date(document.getElementById('dateFrom').value);
+    const dateTo = new Date(document.getElementById('dateTo').value);
+
+    const differenceInDays = Math.abs((dateTo.getTime() - dateFrom.getTime()) / (1000 * 60 * 60 * 24));
+
+    localStorage.setItem('differenceInDays', differenceInDays);
+
+}
+
+/*Age group is going to be a factor in displaying what cars we show for a user. Saving this off to localstorage
+* for later use also */
+function setAgeGroup() {
+    var isOver25;
+
+    if (document.getElementById('under25').checked){
+        isOver25 = false;
+    } else {
+        isOver25 = true;
+    }
+
+    localStorage.setItem('isOver25', isOver25);
 }
 
 
