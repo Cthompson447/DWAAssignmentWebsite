@@ -47,3 +47,7 @@ function renderSingleCard(car) {
 
     return card;
 }
+
+document.addEventListener("DOMContentLoaded", function(){
+   renderCars();
+});
