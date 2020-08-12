@@ -30,7 +30,7 @@
     </ul>
 </head>
 
-<body>
+<body onload="renderCars()">
 <div class="parallax-container">
     <div class="parallax"><img src="media/parallaxBanner1.jpg" alt="Banner image of a road in sunset">
     </div>
@@ -38,11 +38,9 @@
 
 <div class="section white">
     <div class="row container">
-        <h1>GT Car Hire</h1>
-        <p>Here at GT Car Hire, we have been specialists in vehicle hire since 2016. We've been hiring out our fleet of
-            cars to locals and tourists since then with great success. Located just outside of Belfast, we are in an
-            ideal location for your convenience.
-        </p>
+        <h1>Cars for hire</h1>
+        <div id="cardAnchor" class="row container">
+        </div>
     </div>
 </div>
 
@@ -53,7 +51,7 @@
 <footer class="page-footer footer">
     <div class="container">
         <div class="row">
-            <div class="col l6 s12">s
+            <div class="col l6 s12">
                 <h5 class="white-text">GT Car Hire</h5>
                 <p>Opening Hours</p>
                 <p>Monday - 09:00 - 17:00</p>
