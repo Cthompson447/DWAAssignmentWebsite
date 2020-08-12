@@ -5,8 +5,96 @@
       "make": "Toyota",
       "model": "GT86",
       "isAvailableForUnder25Hire": false,
+      "dailyRate": 200,
+      "images": ["media/cars/toyota/gt86/gt861.jpg", "media/cars/toyota/gt86/gt862.jpg"]
+    },
+    {
+      "id": 2,
+      "make": "Toyota",
+      "model": "Supra",
+      "isAvailableForUnder25Hire": false,
+      "dailyRate": 300,
+      "images": ["media/cars/toyota/supra/supra1.jpg", "media/cars/toyota/supra/supra2.png"]
+    },
+    {
+      "id": 3,
+      "make": "Toyota",
+      "model": "Yaris",
+      "isAvailableForUnder25Hire": true,
+      "dailyRate": 60,
+      "images": ["media/cars/toyota/yaris/yaris1.jpg","media/cars/toyota/yaris/yaris2.jpg"]
+    },
+    {
+      "id": 4,
+      "make": "Toyota",
+      "model": "Corolla",
+      "isAvailableForUnder25Hire": true,
+      "dailyRate": 150,
+      "images": ["media/cars/toyota/corolla/corolla1.jpg","media/cars/toyota/corolla/corolla2.jpg"]
+    },
+    {
+      "id": 5,
+      "make": "Audi",
+      "model": "A1",
+      "isAvailableForUnder25Hire": true,
+      "dailyRate": 65,
+      "images": ["media/cars/audi/a1/a11.jpg","media/cars/audi/a1/a12.jpg"]
+    },
+    {
+      "id": 6,
+      "make": "Audi",
+      "model": "A3",
+      "isAvailableForUnder25Hire": true,
       "dailyRate": 100,
-      "images": ["media/cars/gt86/gt861.jpg", "media/cars/gt86/gt862.jpg"]
+      "images": ["media/cars/audi/a3/a31.jpg","media/cars/audi/a3/a32.jpg"]
+    },
+    {
+      "id": 7,
+      "make": "Audi",
+      "model": "RS5",
+      "isAvailableForUnder25Hire": false,
+      "dailyRate": 250,
+      "images": ["media/cars/audi/rs5/rs51.jpg","media/cars/audi/rs5/rs52.jpg"]
+    },
+    {
+      "id": 8,
+      "make": "Volkswagen",
+      "model": "Polo",
+      "isAvailableForUnder25Hire": true,
+      "dailyRate": 55,
+      "images": ["media/cars/volkswagen/polo/polo1.webp","media/cars/volkswagen/polo/polo2.webp"]
+    },
+    {
+      "id": 9,
+      "make": "Volkswagen",
+      "model": "Golf",
+      "isAvailableForUnder25Hire": true,
+      "dailyRate": 85,
+      "images": ["media/cars/volkswagen/golf/golf1.jpg","media/cars/volkswagen/golf/golf2.jpg"]
+    },
+    {
+      "id": 10,
+      "make": "Volkswagen",
+      "model": "Golf R",
+      "isAvailableForUnder25Hire": false,
+      "dailyRate": 175,
+      "images": ["media/cars/volkswagen/golfr/golfr1.jpg","media/cars/volkswagen/golfr/golfr2.jpg"]
+    },
+    {
+      "id": 11,
+      "make": "Tesla",
+      "model": "Model 3",
+      "isAvailableForUnder25Hire": true,
+      "dailyRate": 125,
+      "images": ["media/cars/tesla/model3/model31.jpeg","media/cars/tesla/model3/model32.jpeg"]
+    },
+    {
+      "id": 12,
+      "make": "Tesla",
+      "model": "Model S",
+      "isAvailableForUnder25Hire": false,
+      "dailyRate": 225,
+      "images": ["media/cars/tesla/models/models1.jpg","media/cars/tesla/models/models2.jpg"]
     }
   ]
 }

@@ -1,2 +1,38 @@
 \media\parallaxBanner1.jpg   https://worldtraveltoucan.com/wp-content/uploads/2018/05/Top-banner-car-hire-guide.jpg
 \media\parallaxBanner2.jpg   https://www.skydunstablecars.co.uk/wp-content/gallery/home-slider/slide1.jpg
+
+media/cars/toyota/gt86/gt861.jpg https://d1r57ja1amoclf.cloudfront.net/wp-content/uploads/2014/12/GT86-Aero-3-e1418292196363.jpg
+media/cars/toyota/gt86/gt862.jpg https://d1r57ja1amoclf.cloudfront.net/wp-content/uploads/2014/12/GT86-Aero-7-e1418297541898.jpg
+
+media/cars/toyota/supra/supra1.jpg https://i.insider.com/5e46b5d94b661b7b7d1aa024?width=700&format=jpeg&auto=webp
+media/cars/toyota/supra/supra2.png https://i.pinimg.com/originals/52/0b/a6/520ba65bb89e326ec7322ad0a86126ab.png
+
+media/cars/toyota/yaris/yaris1.jpg https://cdn.autojosh.com/wp-content/uploads/2020/01/toyota-yaris-gr-front-autojosh.jpg?x89939
+media/cars/toyota/yaris/yaris2.jpg https://cdn.autojosh.com/wp-content/uploads/2020/01/toyota-yaris-gr-rear-autojosh.jpg?x89939
+
+media/cars/toyota/corolla/corolla1.jpg http://www.velocityjournal.com/images/stk/2019/808/ty2020corolla5d80886324_600.jpg
+media/cars/toyota/corolla/corolla2.jpg https://the-drive-3.imgix.net/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fthe-drive-cms-content-staging%2Fmessage-editor%252F1551385900115-229006340-corolla-grs-hb-bitone-1k6-18inchgrswheel-rear-comp-rgb-v2-113217.jpg?auto=compress%2Cformat&ixlib=js-1.4.1&s=c8a1f9064cfca456e59559966789ade3
+
+media/cars/audi/a1/a11.jpg https://cogusedcarimagecdn2.azureedge.net/images/WP69UPH_1_1132131.jpg?width=600&scale=both&quality=80
+media/cars/audi/a1/a12.jpg https://cogusedcarimagecdn4.azureedge.net/images/WP69UPH_3_1132233.jpg?width=600&scale=both&quality=80
+
+media/cars/audi/a3/a31.jpg https://cogusedcarimagecdn1.azureedge.net/images/WP20FKM_1_1504311.jpg?width=200&scale=both&quality=80
+media/cars/audi/a3/a32.jpg https://cogusedcarimagecdn1.azureedge.net/images/WP20FKM_3_1504403.jpg?width=600&scale=both&quality=80
+
+media/cars/audi/rs5/rs51.jpg https://posta-magazine.ru/wp-content/uploads/2020/01/l_main_audi-rs5-posta-magazine.jpg
+media/cars/audi/rs5/rs52.jpg https://posta-magazine.ru/wp-content/uploads/old/images/stories/flexicontent2/9_Audi-RS5-Posta-Magazine.jpg
+
+media/cars/volkswagen/golf/golf1 https://cogusedcarimagecdn2.azureedge.net/images/GJ20AHU_1_1223081.jpg?width=600&scale=both&quality=80
+media/cars/volkswagen/golf/golf2.jpg https://cogusedcarimagecdn5.azureedge.net/images/GJ20AHU_3_1223153.jpg?width=600&scale=both&quality=80
+
+media/cars/volkswagen/golfr/golfr1.jpg http://www.carthrottle.com/wp-content/uploads/2013/08/CT-Volkswagen-Golf-R-1.jpg
+media/cars/volkswagen/golfr/golfr2.jpg http://www.carthrottle.com/wp-content/uploads/2013/08/CT-Volkswagen-Golf-R-2.jpg
+
+media/cars/volkswagen/polo/polo1.webp https://parkers-images.bauersecure.com/gallery-image/pagefiles/256814/1752x1168/new-vw-polo2.jpg
+media/cars/volkswagen/polo/polo2.webp https://parkers-images.bauersecure.com/gallery-image/pagefiles/256814/1752x1168/new-vw-polo1.jpg
+
+media/cars/tesla/model3/model32.jpg https://www.greencarguide.co.uk/wp-content/uploads/2019/09/Tesla-Model-3-001-low-res-600x400.jpeg
+media/cars/tesla/model3/model31.jpg https://www.greencarguide.co.uk/wp-content/uploads/2019/09/Tesla-Model-3-002-low-res-600x400.jpeg
+
+media/cars/tesla/models/models1.jpg  https://i.insider.com/56cf275edd08953a178b4598?width=700&format=jpeg&auto=webp
+media/cars/tesla/models/models2.jpg https://i.insider.com/5a5774a9a75e201f008b4dc4?width=700&format=jpeg&auto=webp
