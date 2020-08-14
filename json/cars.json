@@ -8,7 +8,7 @@
       "dailyRate": 200,
       "images": ["media/cars/toyota/gt86/gt861.jpg", "media/cars/toyota/gt86/gt862.jpg"],
       "description": "2 litre boxer-engined coupe with 2 doors, 4 seats.",
-      "fuelType": "petrol"
+      "fuelType": "Petrol"
     },
     {
       "id": 2,
@@ -18,7 +18,7 @@
       "dailyRate": 300,
       "images": ["media/cars/toyota/supra/supra1.jpg", "media/cars/toyota/supra/supra2.png"],
       "description": "3 litre inline-6 coupe with 2 doors and 2 seats.",
-      "fuelType": "petrol"
+      "fuelType": "Petrol"
     },
     {
       "id": 3,
@@ -28,7 +28,7 @@
       "dailyRate": 60,
       "images": ["media/cars/toyota/yaris/yaris1.jpg","media/cars/toyota/yaris/yaris2.jpg"],
       "description": "2 litre inline-4 turbo hatchback with 2 doors and 4 seats.",
-      "fuelType": "petrol"
+      "fuelType": "Petrol"
     },
     {
       "id": 4,
@@ -38,7 +38,7 @@
       "dailyRate": 150,
       "images": ["media/cars/toyota/corolla/corolla1.jpg","media/cars/toyota/corolla/corolla2.jpg"],
       "description": "2 litre inline-4 hybrid estate with 4 doors and 5 seats.",
-      "fuelType": "diesel"
+      "fuelType": "Diesel"
     },
     {
       "id": 5,
@@ -48,7 +48,7 @@
       "dailyRate": 65,
       "images": ["media/cars/audi/a1/a11.jpg","media/cars/audi/a1/a12.jpg"],
       "description": "1.6 litre inline-4 turbo hatchback with 4 doors and 4 seats.",
-      "fuelType": "diesel"
+      "fuelType": "Diesel"
     },
     {
       "id": 6,
@@ -58,7 +58,7 @@
       "dailyRate": 100,
       "images": ["media/cars/audi/a3/a31.jpg","media/cars/audi/a3/a32.jpg"],
       "description": "2 litre inline-4 turbo hatchback with 4 doors and 5 seats.",
-      "fuelType": "diesel"
+      "fuelType": "Diesel"
     },
     {
       "id": 7,
@@ -68,7 +68,7 @@
       "dailyRate": 250,
       "images": ["media/cars/audi/rs5/rs51.jpg","media/cars/audi/rs5/rs52.jpg"],
       "description": "2.9 litre v6 turbo coupe with 2 doors and 4 seats.",
-      "fuelType": "petrol"
+      "fuelType": "Petrol"
     },
     {
       "id": 8,
@@ -78,7 +78,7 @@
       "dailyRate": 55,
       "images": ["media/cars/volkswagen/polo/polo1.webp","media/cars/volkswagen/polo/polo2.webp"],
       "description": "1.6 litre inline-4 hatchback with 4 doors and 5 seats.",
-      "fuelType": "petrol"
+      "fuelType": "Petrol"
     },
     {
       "id": 9,
@@ -88,7 +88,7 @@
       "dailyRate": 85,
       "images": ["media/cars/volkswagen/golf/golf1.jpg","media/cars/volkswagen/golf/golf2.jpg"],
       "description": "2 litre inline-4  hatchback with 4 doors and 5 seats.",
-      "fuelType": "diesel"
+      "fuelType": "Diesel"
     },
     {
       "id": 10,
@@ -98,7 +98,7 @@
       "dailyRate": 175,
       "images": ["media/cars/volkswagen/golfr/golfr1.jpg","media/cars/volkswagen/golfr/golfr2.jpg"],
       "description": "2 litre inline-4 turbo hatchback with 2 doors and 5 seats.",
-      "fuelType": "petrol"
+      "fuelType": "Petrol"
     },
     {
       "id": 11,
@@ -106,9 +106,9 @@
       "model": "Model 3",
       "isAvailableForUnder25Hire": true,
       "dailyRate": 125,
-      "images": ["media/cars/tesla/model3/model31.jpeg","media/cars/tesla/model3/model32.jpeg"],
+      "images": ["media/cars/tesla/model3/model32.jpeg","media/cars/tesla/model3/model31.jpeg"],
       "description": "Fully-electric saloon with 4 doors and 5 seats.",
-      "fuelType": "electric"
+      "fuelType": "Electric"
     },
     {
       "id": 12,
@@ -118,7 +118,7 @@
       "dailyRate": 225,
       "images": ["media/cars/tesla/models/models1.jpg","media/cars/tesla/models/models2.jpg"],
       "description": "Fully-electric sports saloon 4 doors and 5 seats.",
-      "fuelType": "electric"
+      "fuelType": "Electric"
     }
   ]
 }

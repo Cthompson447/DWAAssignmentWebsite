@@ -1,0 +1,25 @@
+
+/*This flex wrapping will allow 2 cards to be displayed alongside each other on the page simultaneously */
+.row .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.card {
+    flex: 0 1 49%;
+}
+
+/*Media query, if on a narrow screen we just want to see 1 car at a time*/
+@media only screen and (max-width: 991px) {
+    .row .container {
+        display: block;
+    }
+    .card {
+    }
+}
+
+.car-hire-submit-button, .btn:focus, .btn:hover{
+    background-color: var(--gt-red);
+}
