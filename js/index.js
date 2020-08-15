@@ -80,8 +80,8 @@ function validateTimeRange() {
 //If same day is chosen for rental, ensure time To isn't before time from
 function validateSameDay() {
     if((document.getElementById('dateFrom').value === document.getElementById('dateTo').value)
-    && (document.getElementById('timeTo').value < document.getElementById('timeFrom').value)){
-        alert('If hiring on same day, time to cannot be before time from');
+    && (document.getElementById('timeTo').value <= document.getElementById('timeFrom').value)){
+        alert('If hiring on same day, Time To cannot be same as or before Time From');
         return false;
     } else {
         return true;
@@ -94,7 +94,13 @@ function setDifferenceInDays() {
     const dateFrom = new Date(document.getElementById('dateFrom').value);
     const dateTo = new Date(document.getElementById('dateTo').value);
 
-    const differenceInDays = Math.abs((dateTo.getTime() - dateFrom.getTime()) / (1000 * 60 * 60 * 24));
+    var differenceInDays = Math.abs((dateTo.getTime() - dateFrom.getTime()) / (1000 * 60 * 60 * 24));
+
+    /*If hiring on the same day, car is being hired for 1 day. If difference is 0, therefore same day so set day
+    difference to 1*/
+    if(differenceInDays == 0){
+        differenceInDays = 1;
+    }
 
     localStorage.setItem('differenceInDays', differenceInDays);
 

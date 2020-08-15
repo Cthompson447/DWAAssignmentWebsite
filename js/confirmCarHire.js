@@ -62,7 +62,7 @@ function createTableBody() {
 
 //if we meet validation rules for personal details, next page!
 function submitConfirm() {
-    if (validateNames() && validatePhone() && validateEmail()) {
+    if (validateNames() &&  validateEmail() && validatePhone()) {
         localStorage.setItem('firstName', document.getElementById('firstName').value);
         window.location.href = ("hireSuccess.html");
     }
