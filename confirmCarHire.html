@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+    <script type="text/javascript" src="js/confirmCarHire.js"></script>
+
     <nav class="navbar-fixed">
         <div class="nav-wrapper header">
             <img class="header-logo" src="media/GTCarHireLogo.png" alt="Image of the logo for GT Car Hire">
@@ -19,17 +21,18 @@
             <ul class="right navbar-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a>Contact Us</a></li>
-                <li><a>Your Booking</a></li>
+                <li><a>About Us</a></li>
             </ul>
         </div>
     </nav>
     <ul class="sidenav sidebar-links" id="mobile-demo">
         <li><a href="index.html">Home</a></li>
         <li><a>Contact Us</a></li>
-        <li><a>Your Booking</a></li>
+        <li><a>About Us</a></li>
     </ul>
 </head>
 
+<body onload="renderHireSummary()">
 <div class="parallax-container">
     <div class="parallax"><img src="media/parallaxBanner1.jpg" alt="Banner image of a road in sunset">
     </div>
@@ -37,10 +40,79 @@
 
 <div class="section white">
     <div class="row container">
-        <h3>Confirm your booking:</h3>
-        <div class="row container">
+        <a href="index.html" class="breadcrumb">Home ></a>
+        <a href="cars.html" class="breadcrumb">Select Car ></a>
+        <a href="confirmCarHire.html" class="breadcrumb">Confirm Details</a>
+        <h4>Confirm your booking:</h4>
+        <div id="table-container" class="row container">
+        </div>
+
+        <h5>Your personal details:</h5>
+        <div id="formContainer">
+            <div class="row">
+                <div class="input-field col s4">
+                    <i class="material-icons prefix">account_circle</i>
+                    <input id="firstName" type="text">
+                    <label for="firstName">First Name</label>
+                </div>
+                <div class="input-field col s4">
+                    <input id="lastName" type="text">
+                    <label for="lastName">Last Name</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s4">
+                    <i class="material-icons prefix">mail_outline</i>
+                    <input id="email" type="text">
+                    <label for="email">Email</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s4">
+                    <i class="material-icons prefix">phone</i>
+                    <input id="phoneNumber" type="text">
+                    <label for="phoneNumber">Phone Number</label>
+                </div>
+                <!-- Added paypal button, this isn't a fully-fledged corporate site so button functionality is not
+                hooked up, if this were real site, submit actions would be validated before click of button and
+                page redirect would be handled upon successful api callback from paypal button-->
+                <div id="paypal-button-container" class="col m2 s4 offset-l1"></div>
+                <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD"
+                        data-sdk-integration-source="button-factory"></script>
+                <script>
+                    paypal.Buttons({
+                        style: {
+                            shape: 'rect',
+                            color: 'blue',
+                            layout: 'vertical',
+                            label: 'checkout',
+
+                        },
+                        createOrder: function (data, actions) {
+                            return actions.order.create({
+                                purchase_units: [{
+                                    amount: {
+                                        value: '1'
+                                    }
+                                }]
+                            });
+                        },
+                        onApprove: function (data, actions) {
+                            return actions.order.capture().then(function (details) {
+                                alert('Transaction completed by ' + details.payer.name.given_name + '!');
+                            });
+                        }
+                    }).render('#paypal-button-container');
+                </script>
+            </div>
+            <!--coded-in bypass for paypal button non-functional -->
+            <button id="carHireSubmitButton" class="btn waves-effect waves-light col offset-l9" type="button"
+                    onclick="submitConfirm()">Submit
+                <i class="material-icons right">send</i>
+            </button>
         </div>
     </div>
+</div>
 </div>
 <div class="parallax-container">
     <div class="parallax"><img src="media/parallaxBanner2.jpg" alt="Banner image of a red supercar"></div>
@@ -63,6 +135,7 @@
                 <h5 class="white-text">Helpful Links</h5>
                 <ul>
                     <li><a class="grey-text text-lighten-3" href="#!">Contact Us</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">About Us</a></li>
                 </ul>
             </div>
         </div>

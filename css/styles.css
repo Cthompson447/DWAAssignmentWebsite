@@ -177,3 +177,7 @@ default css color*/
 .timepicker-canvas line{
     stroke: var(--gt-red) !important;
 }
+
+.breadcrumb{
+    color: black !important;
+}

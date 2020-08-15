@@ -3,6 +3,7 @@ function submitCard() {
      && validateTimeRange() && validateSameDay()){
         setDifferenceInDays();
         setAgeGroup();
+        setSelectedDatesAndTimes();
         window.location.href = ("cars.html");
     }
 }
@@ -111,6 +112,15 @@ function setAgeGroup() {
     }
 
     localStorage.setItem('isOver25', isOver25);
+}
+
+function setSelectedDatesAndTimes() {
+    localStorage.setItem('dateFrom',document.getElementById('dateFrom').value);
+    localStorage.setItem('timeFrom', document.getElementById('timeFrom').value);
+
+    localStorage.setItem('dateTo', document.getElementById('dateTo').value);
+    localStorage.setItem('timeTo',  document.getElementById('timeTo').value);
+
 }
 
 
