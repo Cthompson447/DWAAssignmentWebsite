@@ -181,3 +181,11 @@ default css color*/
 .breadcrumb{
     color: black !important;
 }
+
+.slider{
+    height: 500px !important;
+}
+
+.slider .slides{
+    background-color: transparent !important;
+}
