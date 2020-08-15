@@ -71,16 +71,16 @@
     background-color: var(--gt-red);
 }
 
-.header-logo{
+.header-logo {
     padding-bottom: 1%;
 }
 
 @media screen and (max-width: 991px) {
-    .navbar-links{
+    .navbar-links {
         display: none !important;
     }
 
-    .header-logo{
+    .header-logo {
         height: 110%;
     }
 }
@@ -119,7 +119,7 @@
     }
 }
 
-.footer{
+.footer {
     background-color: var(--gt-red) !important;
 }
 
@@ -131,61 +131,78 @@ p {
     font-family: var(--gt-font);
 }
 
-.parallax-container{
+.parallax-container {
     z-index: 0 !important;
 }
 
-#carHireDetailsCard{
+#carHireDetailsCard {
     padding-top: 2%;
     padding-bottom: 4%;
     z-index: 100 !important;
 }
 
-#carHireSubmitButton{
+#carHireSubmitButton {
     background-color: var(--gt-red);
 }
 
-.car-hire-details-date-time-picker{
+.car-hire-details-date-time-picker {
     width: 20% !important;
     padding-left: 2%;
 }
 
-.time-label{
+.time-label {
     width: 12% !important;
     padding-left: 2%;
 }
+
 /* customising CSS colors for date and time pickers, I'm using important to override the materialize
 default css color*/
 
-.datepicker-date-display, .timepicker-digital-display{
+.datepicker-date-display, .timepicker-digital-display {
     background-color: var(--gt-red) !important;
 }
 
-.btn-flat{
+.btn-flat {
     color: var(--gt-red) !important;
 }
 
-.datepicker-table td.is-selected{
+.datepicker-table td.is-selected {
     background-color: var(--gt-red) !important;
     color: white;
 }
 
-.timepicker-canvas-bg, .timepicker-canvas-bearing{
+.timepicker-canvas-bg, .timepicker-canvas-bearing {
     fill: var(--gt-red) !important;
 }
 
-.timepicker-canvas line{
+.timepicker-canvas line {
     stroke: var(--gt-red) !important;
 }
 
-.breadcrumb{
+.breadcrumb {
     color: black !important;
 }
 
-.slider{
+/*Slider had a fairly unattractive grey background so adding a transparent one to hide overflow*/
+.slider {
     height: 500px !important;
 }
 
-.slider .slides{
+.slider .slides {
     background-color: transparent !important;
+}
+
+/*Google maps styling information*/
+.mapouter {
+    position: relative;
+    text-align: right;
+    height: 300px;
+    width: 300px;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 300px;
+    width: 300px;
 }
